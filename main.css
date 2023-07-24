@@ -1,0 +1,123 @@
+body{
+  font-family: 'PT Sans Narrow';
+  padding-top: 25px;
+}
+h1{
+  text-align: center;
+  font-size: 50px;
+  margin-bottom: 7px;
+}
+p{
+  width: 100%;
+  text-align: center;
+  font-size: 26px;
+  margin: 0;
+}
+.game{
+  border-radius: 10px;
+  height: 450px;
+  width: 450px;
+  margin: auto;
+  margin-top: 30px;
+  padding-top: 50px;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+.row{
+  display: flex;
+  justify-content: center;
+  gap: 5px;
+  margin-bottom: 10px;
+}
+.box{
+  border: 2px solid #aaa;
+  height: 50px;
+  width: 50px;
+  font-size: 36px;
+  text-align: center;
+  font-weight: 900;
+  transition: 1s;
+}
+.notif{
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  width: fit-content;
+  padding: 15px 45px 15px 45px;
+  background: #303030;
+  color:#fff;
+  border: 2px solid #e74c3c;
+  font-size: 42px;
+  box-shadow: 2px 6px 10px rgba(0,0,0,.2);
+}
+.alert{
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  width: fit-content;
+  padding: 35px 100px 35px 100px;
+  background: #303030;
+  color:#fff;
+  border: 2px solid #404040;
+  font-size: 42px;
+  font-weight: 900;
+  text-align: center;
+  box-shadow: 2px 6px 10px rgba(0,0,0,.2);
+}
+button{
+  background: transparent;
+  border: 1px solid #fff;
+  font-family: inherit;
+  font-size: 22px;
+  padding: 12px 22px 12px 22px;
+  color: #fff;
+  margin-top: 35px;
+  transition: .4s;
+  cursor: pointer;
+}
+button:hover{
+  background: #fff;
+  color: #000;
+}
+span{
+  color: #aaa;
+  font-size: 24px;
+  padding-top: 15px;
+}
+.fa-bars{
+  font-size: 42px;
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  cursor: pointer;
+}
+ul{
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.menu{
+  position: absolute;
+  background: #303030;
+  z-index: 1000;
+  top: 70px;
+  right: 20px;
+  color: #fff;
+  font-size: 24px;
+}
+li{
+  padding: 10px;
+  margin: 10px;
+  cursor: pointer;
+}
+li:hover{
+  background: #404040;
+}
+.dark{
+  background: #202020;
+  color: #fff;
+}
+.dark .game{
+  background: #303030;
+}
+@keyframes slideOutRight{0%{-webkit-transform:translateZ(0);transform:translateZ(0)}to{-webkit-transform:translate3d(100%,0,0);transform:translate3d(100%,0,0);visibility:hidden}}.animate__slideOutRight{-webkit-animation-name:slideOutRight;animation-name:slideOutRight}
+@keyframes slideInRight{0%{-webkit-transform:translate3d(100%,0,0);transform:translate3d(100%,0,0);visibility:visible}to{-webkit-transform:translateZ(0);transform:translateZ(0)}}.animate__slideInRight{-webkit-animation-name:slideInRight;animation-name:slideInRight}
