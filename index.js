@@ -39,13 +39,14 @@ document.addEventListener('keypress', function(e){
             paused = true;
             setTimeout(function(){
               if(!word.includes(letter)){
-                rows[current_row].querySelectorAll('.box')[i].style.background = '#bbb';
+                rows[current_row].querySelectorAll('.box')[i].classList.add('not');
+                document.querySelector(`.${letter}`).classList.add('not');
               }else if(word[i] == letter){
-                rows[current_row].querySelectorAll('.box')[i].style.background = '#5ffda4';
-                rows[current_row].querySelectorAll('.box')[i].style.borderColor = '#4fee93';
+                rows[current_row].querySelectorAll('.box')[i].classList.add('green');
+                document.querySelector(`.${letter}`).classList.add('green');
               }else{
-                rows[current_row].querySelectorAll('.box')[i].style.background = '#f39c12';
-                rows[current_row].querySelectorAll('.box')[i].style.borderColor = '#e28b01';
+                rows[current_row].querySelectorAll('.box')[i].classList.add('orange');
+                document.querySelector(`.${letter}`).classList.add('orange');
               }
             }, i*100)
           }
@@ -100,9 +101,17 @@ function end(type){
     word = window.words[Math.floor(Math.random()*window.words.length)];
     document.querySelectorAll('.box').forEach(el => {
       el.innerText = '';
-      el.style = '';
-      div.remove();
     })
+    document.querySelectorAll('.not').forEach(el => {
+      el.classList.remove('not');
+    })
+    document.querySelectorAll('.orange').forEach(el => {
+      el.classList.remove('orange');
+    })
+    document.querySelectorAll('.green').forEach(el => {
+      el.classList.remove('green');
+    })
+    div.remove();
   })
 }
 

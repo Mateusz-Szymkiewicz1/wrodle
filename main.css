@@ -1,6 +1,7 @@
 body{
   font-family: 'PT Sans Narrow';
   padding-top: 25px;
+  padding-bottom: 50px;
 }
 h1{
   text-align: center;
@@ -21,6 +22,7 @@ p{
   margin-top: 30px;
   padding-top: 50px;
   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  margin-bottom: 50px;
 }
 .row{
   display: flex;
@@ -118,6 +120,38 @@ li:hover{
 }
 .dark .game{
   background: #303030;
+}
+.kb_row{
+  display: flex;
+  justify-content: center;
+}
+.key{
+  background: #eee;
+  padding: 12px;
+  font-size: 24px;
+  margin: 5px;
+}
+.dark .key{
+  background: #404040;
+}
+.not{
+  background: #bbb;
+}
+.dark .not{
+  background: #555;
+  border-color: #444;
+}
+.orange{
+  background: #f39c12 !important;
+  border-color: #e28b01;
+}
+.green{
+  background: #5ffda4 !important;
+  border-color: #4fee93;
+}
+.dark .green{
+  background: #2dcc71 !important;
+  border-color: #1cbb60;
 }
 @keyframes slideOutRight{0%{-webkit-transform:translateZ(0);transform:translateZ(0)}to{-webkit-transform:translate3d(100%,0,0);transform:translate3d(100%,0,0);visibility:hidden}}.animate__slideOutRight{-webkit-animation-name:slideOutRight;animation-name:slideOutRight}
 @keyframes slideInRight{0%{-webkit-transform:translate3d(100%,0,0);transform:translate3d(100%,0,0);visibility:visible}to{-webkit-transform:translateZ(0);transform:translateZ(0)}}.animate__slideInRight{-webkit-animation-name:slideInRight;animation-name:slideInRight}
